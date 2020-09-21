@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">Weather Dashboard</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="search col-md-3">
+                <h2> Search for a City:</h2>
+                <form id="form-left">
+                    <input type="text" id="searchCity">
+                    <button id="searchBtn" value="Search"></button>
+                </form>
+                <ul id="list"> add in here lis when they search a city</ul>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row" id="current-weather">
+                    todays forcast
+                    <div class="card" id = "todayCard">
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+                <div class="row">5 day forcast</div>
+
+
+                <!-- the next 5 days  -->
+                <div class="row" id="next-five-days"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- row on the left with place to search with one col with the search bar and search button got to get a grid
+
+    
+    
+    another col where the searched cities go-->
+    <!-- header with jumbotron that says "weather Dashboard" -->
+    <!-- under header there is a box with most recent city and date with temp, humidity wind speed and UV index -->
+    <!-- under that there is the 4 day forcast with 4 boxes with the date emoji of weather, temp and humitity. in a blue box -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
